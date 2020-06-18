@@ -1,0 +1,1013 @@
+.backdrop {
+    background-color: #1652f0;
+    height: 517px;
+    width: 100%;
+}
+
+.nav-container {
+    height: 72px;
+    padding: 0px 85px 0px 85px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .9s;
+}
+
+.scrolled {
+    position: fixed;
+    background: #fff;
+    z-index: 4;
+    top: 0;
+    width: 86.5%;
+    border-bottom: 1px solid rgb(238, 238, 238)
+}
+
+.nav-container ul {
+    display: flex;
+    margin: 0;
+}
+
+.left-nav-side {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.coinbase-logo {
+    width: 87px;
+    height: 19px;
+    padding-bottom: 5px;
+}
+
+.coinbase-logo:hover {
+    cursor: pointer
+}
+
+.left-nav-side button {
+    background-color:#05b169;
+    width: auto;
+    height: auto;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 10px
+}
+
+.left-nav-side button:hover {
+    cursor: pointer
+}
+
+.nav-container ul li {
+    list-style-type: none;
+    margin-right: 45px;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 11.5px;
+    color: #fff;
+}
+
+.scrolled ul li a {
+    color: #000
+}
+
+.nav-container li a {
+    text-decoration: none;
+    color: #fff
+}
+
+.nav-container li a:hover {
+    text-decoration: none;
+    opacity: .8;
+}
+
+.products a {
+    color: #fff;
+    text-decoration: none;
+    transition: ease-in-out;
+    padding-top: 30px;
+    padding-bottom: 30px
+}
+
+.products a:hover {
+    opacity: .8;
+}
+
+.right-nav-side {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 11.5px;
+    color: #fff;
+}
+
+.scrolled .right-nav-side {
+    color: #000
+}
+
+.right-nav-side a {
+    text-decoration: none;
+    color: #fff
+}
+
+.scrolled .right-nav-side a {
+    text-decoration: none;
+    color: #000
+}
+
+.right-nav-side a:hover {
+    opacity: .8;
+    cursor: pointer
+}
+
+.right-nav-side button {
+    margin-left: 20px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    padding: 12px 16px;
+    background: transparent;
+    color: #fff
+}
+
+.scrolled .right-nav-side button {
+    margin-left: 20px;
+    border-radius: 4px;
+    padding: 12px 16px;
+    background: #05b169;
+    border: none;
+    color: #fff
+}
+
+.right-nav-side button:hover {
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.scrolled .right-nav-side button:hover {
+    background: #059e5e;
+    color: #fff;
+    transition: .1s;
+}
+
+.products-dropdown {
+    background: #fff;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    opacity: 0;
+    z-index: 6;
+    border-radius: 4px;
+    overflow: hidden;
+    max-height: 0;
+    transition: opacity 0.2s ease-in;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 5px;
+}
+
+.company-link {
+    padding-bottom: 30px;
+}
+
+.company-dropdown {
+    width: 100px;
+    position: absolute;
+    left: 390px;
+    top: 70px;
+    border-radius: 4px;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 5px;
+}
+
+.company-dropdown ul {
+    display: block;
+    z-index: 1;
+    padding: 0 !important;
+    margin: 0 !important
+}
+
+.company:hover .company-dropdown {
+    display: block;
+    opacity: 1;
+    max-height: 100%;
+}
+
+.scrolled .company:hover .company-dropdown {
+    max-height: 500%
+}
+
+.company-dropdown ul li {
+    display: flex;
+    width: 110px;
+    height: 40px;
+    border-bottom: 0.1px solid rgb(238, 238, 238);
+    background: #fff;
+    margin: 0;
+    color: rgb(29, 29, 29);
+    padding-left: 13px;
+    font-family: Montserrat;
+    font-weight: 500;
+    align-items: center;
+    justify-content: left;
+}
+
+.company-dropdown ul li:hover {
+    cursor: pointer;
+    transition: .5s;
+    color: #1652f0;
+}
+
+.company-dropdown ul li a {
+    text-decoration: none;
+    color: rgb(29, 29, 29);
+}
+
+.products:hover .products-dropdown {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, minmax(150px));
+    padding-bottom: 0;
+    min-width: 700px;
+    color: #000;
+    opacity: 1;
+    max-height: 100%;
+    transition: opacity .3s ease-in;
+}
+
+.scrolled .products:hover .products-dropdown {
+    max-height: 600%
+}
+
+.dropdown-center-text {
+    text-align: center;
+    color: #fff;
+    margin-top: 40px
+}
+
+.dropdown-center-text h1 {
+    font-size: 46px;
+    margin-bottom: 20px
+}
+
+.dropdown-center-text p {
+    font-size: 15.5px;
+    font-weight: 400;
+    margin: 0
+}
+
+.dropdown-input {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.dropdown-input input {
+    width: 309.03px;
+    height: 68px;
+    margin-right: 10px;
+    border-radius: 4px;
+    padding: 15px;
+    box-sizing: border-box;
+    border: none
+}
+
+
+.dropdown-input input::placeholder {
+    font-size: 14px;
+    font-family: Montserrat
+}
+
+.dropdown-input button {
+    width: 135.97px;
+    height: 68px;
+    background: #05b169;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    font-family: Montserrat
+}
+
+.dropdown-input button:hover {
+    background: #059e5e;
+    cursor: pointer
+}
+
+.for-everyone, .for-businesses, .advanced-traders {
+    color: rgba(17, 51, 83, 0.6);
+    font-weight: 700;
+    font-size: 12px;
+    margin-bottom: 15px;
+    margin: 0
+}
+
+.coins-everyone {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    margin-top: 30px
+}
+
+.coins-everyone:hover {
+    cursor: pointer
+}
+
+.coins-everyone h1, .right-side .coins h1 {
+    font-family: Montserrat;
+    color: rgb(5, 15, 25);
+    font-size: 15px;
+    margin-bottom: 4px;
+    font-weight: 600
+}
+
+.coins-everyone p, .right-side .coins p {
+    font-family: Montserrat;
+    color:rgba(17, 51, 83, 0.6);
+    font-size: 13px;
+    font-weight: 500
+}
+
+.products-coins-wrapper  {
+    padding-left: 20px
+}
+
+.coins {
+    width: 35px;
+    height: 35px;
+    margin-right: 20px
+}
+
+.coins img {
+    width: 100%;
+    height: 100%
+}
+
+.products-dropdown .right-side img {
+    width: 35px;
+    height: 35px;
+    margin-right: 20px
+}
+
+.right-side {
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.left-side {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.right-side .coins {
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+    padding-left: 10px;
+    margin-bottom: 30px
+}
+
+.right-side .coins:hover {
+    cursor: pointer
+}
+
+.bottom-side {
+    grid-column: 1/3;
+    border-top: 1px solid rgb(238, 238, 238);
+    padding-left: 0;
+    padding-right: 0;
+    padding: 15px;
+}
+
+.bottom-side p {
+    font-family: Montserrat;
+    color: rgba(17, 51, 83, 0.6);
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px
+}
+
+.bottom-side p:hover {
+    cursor: pointer;
+    color: rgba(89, 119, 146, 0.6)
+}
+
+.crypto-price {
+    min-width: 85%;
+    border-radius: 5px;
+    margin: -150px auto 40px auto;
+    background: #fff;
+    border-collapse: collapse;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 5px;
+}
+
+.crypto-price tbody tr {
+    box-sizing: border-box;
+}
+
+.crypto-price tbody .number {
+    color: #a9b6c1;
+}
+
+.crypto-price tbody tr:hover {
+    background: rgb(248, 248, 248);
+    cursor: pointer
+}
+
+.crypto-price thead tr {
+    text-align: left;
+}
+
+.crypto-price th, .crypto-price td {
+    border-bottom: 1px solid rgb(238, 238, 238);
+    padding: 15px;
+    
+}
+
+.crypto-price th {
+    color:#a9b6c1;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 12px
+}
+.crypto-price tbody div {
+    width: 36px;
+    height: 36px;
+    margin-right: 20px
+}
+
+.crypto-price tbody div img {
+    width: 100%;
+    height: 100%;
+}
+
+.crypto-price tbody button {
+    background: #05b169;
+    padding: 12px 16px;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.crypto-price tbody button:hover {
+    cursor: pointer;
+    background: #059e5e;
+}
+
+.coin-img {
+    display: flex;
+    align-items: center;
+}
+
+.coin-img p {
+    margin-right: 10px
+}
+
+.coin-img span {
+    color: #a9b6c1;
+}
+
+.earn-with-crypto {
+    display: flex;
+    max-width: 87%;
+    margin: 0 auto;
+    padding: 10px;
+    margin-bottom: 60px;
+    justify-content: space-between;
+    align-items: center
+}
+
+.earn-with-crypto .left-side {
+    width: 350px;
+    padding: 0
+}
+
+.earn-with-crypto .left-side h1 {
+    font-size: 30px;
+    font-family: Montserrat;
+    font-weight: 600;
+    margin-bottom: 15px
+}
+
+.earn-with-crypto .left-side p {
+    font-size: 12px;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 15px
+}
+
+.earn-with-crypto .left-side button {
+    background: #1652f0;
+    border: none;
+    padding: 12px 16px;
+    color: #fff;
+    border-radius: 4px
+}
+
+.earn-with-crypto .left-side button:hover {
+    background: #104bdf;
+    cursor: pointer;
+    transition: .4s
+}
+
+.earn-with-crypto .right-side {
+    width: 450px;
+    padding: 0
+}
+
+.right-side .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.right-side .row .left {
+    display: flex;
+    align-items: center
+}
+
+.left div {
+    width: 38px;
+    height: 38px;
+    margin-right: 20px
+}
+
+.left div img {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.left h1, .left p {
+    margin: 0
+}
+
+.left h1 {
+    margin-right: 20px;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 20px
+}
+
+.left p {
+    color: #8e9eae;
+    font-weight: 700;
+    font-family: Montserrat;
+}
+
+.right-side .row {
+    padding: 20px;
+
+    border-radius: 7px
+}
+
+.right-side .row:hover {
+    box-shadow: 1px 1px 40px rgba(0,0,0, .1);
+    cursor: pointer
+}
+
+.row .right-text {
+    color: #27bb7d
+}
+
+.view-more {
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #1652f0
+}
+
+.view-more:hover {
+    cursor: pointer
+}
+
+.create-crypto {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 90px
+}
+
+.create-crypto h1 {
+    color: #0f3256;
+    margin-bottom: 20px;
+}
+
+.create-crypto p {
+    color: #a0afc2
+}
+
+.create-crypto-wrapper {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 70px
+}
+
+.create-crypto-row {
+    display: flex;
+    align-items: center;
+    width: 370px;
+    margin-bottom: 35px;
+}
+
+.create-crypto-row h1 {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 15px
+}
+
+.create-crypto-row p {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 22px;
+    color: #7e99bd
+}
+
+.icon-wrapper1, .icon-wrapper3 {
+    width: 110px;
+    height: 60px;
+    margin-right: 20px;
+    background-color: #fff;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15)
+}
+
+.icon-wrapper2 {
+    width: 125px;
+    height: 60px;
+    margin-right: 20px;
+    background-color: #fff;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15)
+}
+
+.icon-wrapper4 {
+    width: 100px;
+    height: 60px;
+    margin-right: 20px;
+    background-color: #fff;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15)
+}
+
+.icon-wrapper1 div {
+    width: 25px;
+    height: 28px;
+}
+
+.icon-wrapper1 div img {
+    width: 100%;
+    height: 100%
+}
+
+.icon-wrapper2 div {
+    width: 31px;
+    height: 29px;
+}
+
+.icon-wrapper2 div img {
+    width: 100%;
+    height: 100%
+}
+
+.icon-wrapper3 div {
+    width: 29px;
+    height: 31px;
+}
+
+.icon-wrapper3 div img {
+    width: 100%;
+    height: 100%
+}
+
+.most-trusted {
+    margin: 120px auto;
+    text-align: center;
+    margin-bottom: 70px
+}
+
+.most-trusted h1 {
+    color: #0f3256;
+    margin-bottom: 20px;
+}
+
+.most-trusted p {
+    color: #a0afc2
+}
+
+.most-trusted-wrapper {
+    display: grid;
+    max-width: 80%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, minmax(150px, auto));
+    grid-gap: 10px;
+    margin: 0 auto;
+    margin-bottom: 60px
+}
+
+.most-trusted-wrapper .one, 
+.most-trusted-wrapper .two, 
+.most-trusted-wrapper .three {
+    text-align: center;
+    padding: 25px
+}
+
+.most-trusted-wrapper .one h1, 
+.most-trusted-wrapper .two h1, 
+.most-trusted-wrapper .three h1 {
+    font-family: Montserrat;
+    font-size: 18px;
+    color: #002f6b;
+    margin-bottom: 20px;
+    font-weight: 600;
+
+}
+
+.most-trusted-wrapper .one p, 
+.most-trusted-wrapper .two p, 
+.most-trusted-wrapper .three p {
+    font-family: Montserrat;
+    font-size: 13px;
+    color: #90a1b8;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.most-trusted-wrapper .one a, 
+.most-trusted-wrapper .two a, 
+.most-trusted-wrapper .three a {
+    font-family: Montserrat;
+    font-size: 12px;
+    color: #1652f0;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.most-trusted-wrapper .one div {
+    width: 53px;
+    height: 56px;
+    margin: 0 auto;
+    margin-bottom: 40px
+}
+
+.most-trusted-wrapper .one div img {
+    width: 100%;
+    height: 100%
+}
+
+.most-trusted-wrapper .two div {
+    width: 56px;
+    height: 53px;
+    margin: 0 auto;
+    margin-bottom: 40px
+}
+
+.most-trusted-wrapper .two div img {
+    width: 100%;
+    height: 100%
+}
+.most-trusted-wrapper .three div {
+    width: 51px;
+    height: 57px;
+    margin: 0 auto;
+    margin-bottom: 40px
+}
+
+.most-trusted-wrapper .three div img {
+    width: 100%;
+    height: 100%
+}
+
+.currency-exchange {
+    background: #1652f0;
+    height: 200px;
+    margin-bottom: 90px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.currency-exchange .one {
+    margin-top: 60px;
+
+}
+
+.currency-exchange .one h1 {
+    font-family: Montserrat;
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff
+}
+
+.currency-exchange .one p {
+    color: #a7bef9;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.get-started-wrapper {
+    display: grid;
+    max-width: 80%;
+    grid-template-columns: 0.8fr 0.3fr 0.8fr 0.3fr 0.8fr;
+    grid-template-rows: repeat(1, minmax(150px, auto));
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.get-started-wrapper .one, 
+.get-started-wrapper .two, 
+.get-started-wrapper .three {
+    text-align: center;
+    padding: 0
+}
+
+.get-started-wrapper .one h1, 
+.get-started-wrapper .two h1, 
+.get-started-wrapper .three h1 {
+    font-family: Montserrat;
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 20px;
+    font-weight: 600;
+
+}
+
+.get-started-wrapper .one div {
+    width: 50px;
+    height: 43px;
+    margin: 0 auto;
+    margin-bottom: 40px
+}
+
+.get-started-wrapper .one div img {
+    width: 100%;
+    height: 100%
+}
+
+.get-started-wrapper .two div {
+    width: 64px;
+    height: 54px;
+    margin: 0 auto;
+    margin-bottom: 40px
+}
+
+.get-started-wrapper .two div img {
+    width: 100%;
+    height: 100%
+}
+.get-started-wrapper .three div {
+    width: 76px;
+    height: 52px;
+    margin: 0 auto;
+    margin-bottom: 40px
+}
+
+.get-started-wrapper .three div img {
+    width: 100%;
+    height: 100%
+}
+
+.dash {
+    width: 150px;
+    height: 1px
+}
+
+.dash img {
+    width: 100%;
+    height: 100%;
+    margin-top: 50px
+}
+
+.earn-upsell {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: #eaf6ff;
+    margin-bottom: 90px
+}
+
+.earn-upsell .astro {
+    width: 100%;
+    height: 418px;
+}
+
+.earn-upsell .astro img {
+    width: 100%;
+    height: 100%
+}
+
+.earn-upsell .earn {
+    margin-left: 140px;
+    margin-top: 120px;
+    width: 350px
+}
+
+.earn-upsell h1 {
+    font-size: 30px;
+    font-family: Montserrat;
+    font-weight: 600;
+    margin-bottom: 15px
+}
+
+.earn-upsell p {
+    font-size: 12px;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 15px
+}
+
+.earn-upsell button {
+    background: #1652f0;
+    border: none;
+    padding: 12px 16px;
+    color: #fff;
+    border-radius: 4px
+}
+
+.earn-upsell button:hover {
+    background: #104bdf;
+    cursor: pointer;
+    transition: .4s;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, minmax(300px, auto));
+    margin: 0 auto;
+    width: 85%;
+    margin-bottom: 80px;
+}
+
+footer .logo div {
+    width: 87px;
+    height: 19px
+}
+
+footer .logo div img {
+    width: 100%;
+    height: 100%;
+}
+
+footer .logo p {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 14.5px;
+    margin-top: 40px;
+    color: #8f969e;
+}
+
+footer .two p, footer .three p, footer .four p, footer .five p {
+    margin-bottom: 16px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 13.5px;
+}
+
+footer .two a, footer .three a, footer .four a, footer .five a {
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-family: Montserrat;
+    font-weight: 400;
+    display: block;
+    font-size: 13.5px;
+    color: #8f969e;
+}
+
+footer .two a:hover, footer .three a:hover, footer .four a:hover, footer .five a:hover {
+    text-decoration: underline;
+    color: #076bd3;
+    cursor: pointer
+}
+
+
+
+
+
+
