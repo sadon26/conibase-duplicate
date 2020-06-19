@@ -1,5 +1,5 @@
 .signin-wrapper {
-    background: blue;
+    background: #1652f0;
     height: 100vh;
     width: 100%
 }
@@ -58,35 +58,38 @@
     cursor: pointer
 }
 
-.signin-wrapper .right-side .product {
-    display: flex
-}
-
-.signin-wrapper .right-side .product:hover {
-    cursor: pointer;
-}
-
 .signin-wrapper .right-side ul a {
     margin-right: 5px;
     text-decoration: none;
     color: #fff
 }
 
-.signin-wrapper .right-side .product img {
+.product img {
     width: 10px;
     height: 10px
 }
 
-.product div {
+.product-dropdown {
     position: absolute;
     max-height: 0;
+    opacity: 0;
     overflow: hidden;
-    top: 72px;
+    top: 11%;
     width: 200px;
-    height: auto;
     background: #fff;
     box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 5px;
     border-radius: 1px;
+    z-index: 1;
+    transition: opacity 0.15s ease-in
+}
+
+.product-dropdown li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product a {
+    padding-bottom: 30px
 }
 
 .product div ul {
@@ -102,13 +105,20 @@
     padding: 7px
 }
 
+.product div ul li:hover {
+    cursor: pointer;
+    color: #076bd3
+}
+
 .triangle {
     max-height: 0;
     width: 24px;
     height: 14px;
     position: absolute;
-    top: 60px;
-    right: 355px;
+    top: 9.5%;
+    opacity: 0;
+    right: 365px;
+    transition: opacity 0.15s ease-in
 }
 
 .triangle img {
@@ -116,6 +126,120 @@
     height: 100%;
 }
 
-.product:hover .product div {
-    max-height: 100%
+.product:hover .product-dropdown {
+    opacity: 1;
+    max-height: 100%;
 }
+
+.product:hover .triangle {
+    opacity: 1;
+    max-height: 100%;
+}
+
+.signin-wrapper h1 {
+    text-align: center;
+    color: #fff;
+    margin-top: 35px;
+    margin-bottom: 45px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 23px
+}
+
+.coinbase-login {
+    width: 360px;
+    height: autp;
+    margin: 0 auto;
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 30px;
+    margin-bottom: 25px
+}
+
+.details input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ececec;
+    border-radius: 4px
+}
+
+.coinbase-login input::placeholder {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 500;
+    color: #ababab
+}
+
+.below-input {
+    display: flex;
+    justify-content: space-between;
+}
+
+.below-input input {
+    margin-right: 7px;
+    padding: 0;
+}
+
+.below-input div {
+    display: flex;
+    align-items: center;
+}
+
+.below-input p {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+    font-size: 9px;
+    font-weight: 500;
+    color: #949494
+}
+
+.below-input button {
+    padding: 13px 19px;
+    background: linear-gradient(#1652f0,#0d40c6);
+    border: none;
+    font-size: 11px;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 3px;
+    font-family: Montserrat;
+}
+
+.below-input button:hover {
+    color: #fff;
+    background: #0d40c6;
+    cursor: pointer
+}
+
+.below-signin-wrapper {
+    text-align: center;
+}
+
+.below-signin-wrapper div {
+    margin-bottom: 7px;
+}
+
+.below-signin-wrapper div a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 8px;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.below-signin-wrapper a {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+}
+
+.below-signin-wrapper div a:hover, .below-signin-wrapper a:hover {
+    text-decoration: underline;
+}
+

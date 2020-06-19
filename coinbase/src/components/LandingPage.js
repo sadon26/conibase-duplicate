@@ -51,7 +51,7 @@ const LandingPage = () => {
                 <nav className={state ? "nav-container scrolled" : "nav-container"}>
                     <div className="left-nav-side">
                         <div className="coinbase-logo">
-                            <img style={{ width: "100%", height: "100%" }} src={state ? coinbaseBlue : coinbase} />
+                            <Link to="/"><img style={{ width: "100%", height: "100%" }} src={state ? coinbaseBlue : coinbase} /></Link>
                         </div>
                         <ul>
                             <li><a href="#">Prices</a></li>
@@ -160,7 +160,7 @@ const LandingPage = () => {
                     </div>
                     <div className="right-nav-side">
                         <Link to="/signin"><a>Sign in</a></Link>
-                        <button>Get started</button>
+                        <Link to="signup"><button>Get started</button></Link>
                     </div>
                 </nav>
 
@@ -170,7 +170,7 @@ const LandingPage = () => {
                 </div>
                 <div className="dropdown-input">
                     <input type="text" placeholder="Email address" />
-                    <button>Get Started</button>
+                    <Link to="/signup"><button>Get Started</button></Link>
                 </div>
             </div>
 
